@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DJ Together - Mixed Reality</title>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+
+<body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+     <a-assets>
+        <a-asset-item
+          id="mic"
+          src="https://cdn.glitch.global/deaad1b3-c137-49a3-b9f1-f506e217d6d8/vintage_microphone.glb?v=1750781974892"
+        ></a-asset-item>
+        <a-asset-item
+          id="guitar"
+          src="https://cdn.glitch.global/dac312c4-5145-47d4-8a18-3684e2763a69/generic_electronic_guitar.glb?v=1750723479382"
+        ></a-asset-item>
+        <a-asset-item
+          id="drums"
+          src="https://cdn.glitch.global/dac312c4-5145-47d4-8a18-3684e2763a69/drums.glb?v=1750725752915"
+        ></a-asset-item>
+        <a-asset-item
+          id="text"
+          src="https://cdn.glitch.global/deaad1b3-c137-49a3-b9f1-f506e217d6d8/untitled.glb?v=1750867542167"
+        ></a-asset-item>
+      </a-assets>
+    
+
+
+
+
+<a-marker preset="hiro">
+  <a-entity gltf-model="#mic" scale="5 5 5"></a-entity>
+</a-marker>
+<a-entity camera></a-entity>
+
+  </a-scene>
+</body>
+
